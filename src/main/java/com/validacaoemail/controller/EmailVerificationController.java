@@ -57,3 +57,4 @@ public class EmailVerificationController {
         return ResponseEntity.ok(response);
     }
 }
+
