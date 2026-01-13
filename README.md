@@ -311,9 +311,6 @@ Este projeto é um exemplo educacional para portfólio.
 
 ## 🔧 Troubleshooting
 
-### Erro de conexão com MySQL
-
-Verifique se o MySQL está rodando e as credenciais estão corretas.
 
 ### Login admin falhando
 
