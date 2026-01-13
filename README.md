@@ -33,11 +33,7 @@ mvn spring-boot:run
 
 A API estará disponível em: `http://localhost:8080`
 
-Se estiver usando `.env`, rode com o profile que carrega o arquivo:
-
-```bash
-mvn -Plocal-env spring-boot:run
-```
+Se estiver usando `.env`, ele sera carregado automaticamente na inicializacao.
 
 ### Compilando e executando com Java
 
@@ -93,8 +89,8 @@ X-API-KEY: sua-api-key-aqui
 - `EXTERNAL_PROVIDER_FAILED`: Falha ao chamar o provedor externo
 - `VALID_EMAIL`: Email válido
 
-**Configuração do Hunter (env vars):**
-Exporte no terminal ou use um `.env` carregado pelo profile `local-env`.
+**Configuracao do Hunter (env vars):**
+Exporte no terminal ou use um `.env` carregado automaticamente.
 ```
 HUNTER_ENABLED=true
 HUNTER_API_KEY=suachave
@@ -192,7 +188,7 @@ Remove uma API Key
 
 ### Variáveis de Ambiente
 
-Crie um arquivo `.env` (carregado via Maven profile `local-env`) ou configure as variáveis no ambiente:
+Crie um arquivo `.env` (carregado automaticamente) ou configure as variaveis no ambiente:
 
 ```env
 # Database (H2 por padrão; ajuste se for usar MySQL)
